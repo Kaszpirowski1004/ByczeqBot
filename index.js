@@ -17,7 +17,7 @@ var isStart = false;
 
 
 client.on("ready",() => {
-	console.log("Wbi³em na Serwer. Zaczynamy! Nie wiesz jak rozpocz¹æ? Wpisz !komendy");
+	console.log("WbiÂ³em na Serwer. Zaczynamy! Nie wiesz jak rozpoczÂ¹Ã¦? Wpisz !komendy");
 })
 
 
@@ -98,11 +98,11 @@ client.on('message', async message => {
 			case 'seth':
 				if(!arg[1]) 
 				{
-					message.channel.send("Podaj godzine zakoñczenia pracy np. !seth 16")
+					message.channel.send("Podaj godzine zakoÃ±czenia pracy np. !seth 16")
 				}
 				else if(Number.parseInt(arg[1])<24 && Number.parseInt(arg[1])>=0)
 				{ 
-					//KoncowyCzas = new Date(Date.now());
+					KoncowyCzas = new Date(Date.now());
 					KoncowyCzas.setHours(Number.parseInt(arg[1]));
 					AktualnyCzas = new Date(Date.now());
 				
@@ -116,7 +116,7 @@ client.on('message', async message => {
 				break;
 			case 'setm':
 				if (!arg[1]) {
-					message.channel.send("Podaj minute zakoñczenia pracy np. !setm 30")
+					message.channel.send("Podaj minute zakoÃ±czenia pracy np. !setm 30")
 				}
 				else if (Number.parseInt(arg[1]) < 60 && Number.parseInt(arg[1]) >= 0) {
 					//KoncowyCzas = new Date(Date.now());
