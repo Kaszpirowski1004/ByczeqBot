@@ -51,7 +51,7 @@ client.on('message', function (message) {
 		
 		var a =0;
 		var b= 1;		
-		var number = Math.random() * (max - min) + min;
+		var number = Math.random() * (b - a) + a;
 		if(number === 0)
 		{
 			message.channel.send("Reszka byczqu!");
