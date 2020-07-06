@@ -46,6 +46,25 @@ client.on('message', function (message) {
 	}
 });
 
+client.on('message', function (message) {
+	if (message.content === "!rzuc") {
+		
+		var a =0;
+		var b= 1;		
+		var number = Math.random() * (max - min) + min;
+		if(number === 0)
+		{
+			message.channel.send("Reszka byczqu!");
+		}
+		else
+		{
+			message.channel.send("Orzelek byczqu!");
+		}
+		
+		
+	}
+});
+
 
 
 client.on('message', function (message) {
